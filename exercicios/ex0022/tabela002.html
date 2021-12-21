@@ -21,6 +21,18 @@
             color: rgb(5, 5, 59);
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:rgb(5, 5, 59);
+            color: chartreuse;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(199, 241, 157);
+        }
+
         thead, tfoot {
             background-color: chartreuse;
             color: black;
@@ -35,6 +47,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPITION
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,10 +57,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>   
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
 
         </thead>
@@ -165,8 +179,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>0000</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210 147 125</strong></td>
             </tr>
 
         </tfoot>
